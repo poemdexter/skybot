@@ -37,6 +37,7 @@ def get_multitwitch_url(db):
 	if not streams:
 		return "no streams on watch list"
 	else:
+		print len(streams)
 		stream_list = ""
 		for user_raw in streams:
 			user = user_raw[0].encode('ascii')
